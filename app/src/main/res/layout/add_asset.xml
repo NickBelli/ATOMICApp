@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/addTitle"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_weight="0.10"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Enter the Asset Info"
+        android:textSize="22dp" />
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addAMNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="35dp"
+            android:text="AM Number"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/addAMEditText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:text="AM00000000" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addManAndModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="35dp"
+            android:text="Man And Model"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/model_spinner"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/model_array"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addLocation"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Location"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/addLocationText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:text="1308 C" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addPrimaryUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Primary UserID"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/addUserIDText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="true"
+            android:text="SMITJ001" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="352dp"
+    android:layout_height="wrap_content"
+    android:layout_weight=".10"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/addInServiceDate"
+            android:layout_width="183dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="10dp"
+            android:paddingRight="25dp"
+            android:text="In Service Date"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/changeDateButton"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:onClick="changeDateClickHandler"
+            android:text="In Service Date" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".10"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addAssets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="handleAddClick"
+            android:text="Add Asset" />
+
+    </LinearLayout>
+
+</LinearLayout>
